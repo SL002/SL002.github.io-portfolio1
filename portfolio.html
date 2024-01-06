@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><i>Surith</i></div>
+        <div style="margin: 0; padding: 0">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+    <nav id="hamburger-nav">
+        <div class="logo"><i>Surith</i></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="togglemenu()">Home</a></li>
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <div style="border:white 2px solid;"></div>
+
+    <section id="home">
+        <div class="welcome">
+            <p class="welcome_p">Welcome...!</p>
+        </div>
+        <div class="profile">
+            <div class="section_pic-container-1">
+                <img src="./assets/profile_pic.jpg" alt="profile picture" class="profile-pic" />
+            </div>
+            <div class="section_text">
+                <p class="section_text_p1">Hello, I'm</p>
+                <h1 class="title">Surith Lakpriya</h1>
+                <p class="section_text_p2">Undergraduate</p>
+                <div class="btn-container">
+                    <button type="button" class="btn_btn" onclick="window.open('./assets/cv.pdf')">
+                        download cv
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin-logo.png" alt="linkedin-logo" class="icon" />
+                    <img src="./assets/GitHub-Symbol.png" alt="github-logo" class="icon" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section_pic-container-2">
+                <img src="./assets/about-pic.png" alt="About picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <p>I'm an Undergraduate. I'm following my B.Sc.Hons in Computer Science degree offered at
+                    the University of Kelaniya. I did my A/L's in Physical Science stream. I'm interested
+                    in Science , Physics , Maths and IT.
+                </p>
+                <p>Fascinated to be a human being in this planet earth , inspiered by the natural
+                    phenomenons in the universe. Trying to understand things around us that still
+                    we can not explain or don't know. We started to embark on a journey from the
+                    day we born and I'm happy to try and find out the new things that are waiting
+                    for me. This is all about me, Surith Lakpriya.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/check-mark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/check-mark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Backend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/check-mark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>PostgreSQL</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/check-mark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>C</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p1">My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-details-container">
+            <p>For the moment,<br> I haven't done any major project to mention here.
+                <br>I'll update as soon as after finishing one.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section_text_p1">You can</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="c-section-container">
+            <div class="input-container">
+                <div>
+                    <p style="color: black;">Enter your name <br></p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p style="color: black;">Enter your email <br></p>
+                    <input type="email">
+                </div>
+                <div>
+                    <p style="color: black;">Enter the subject <br></p>
+                    <input type="text">
+                </div>
+                <div>
+                    <p style="color: black;">Enter the massage <br></p>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="btn_send-container">
+                <button type="button" class="btn_send" onclick="alert('Your inputs were sent..!')">
+                    SEND
+                </button>
+            </div>
+
+            <div class="socials-logo-container">
+                <img src="./assets/facebook-logo.png" alt="Facebook" class="social-icon" onclick="location.href='https://facebook.com/'">
+                <img src="./assets/twitter-logo.png" alt="Twitter" class="social-icon" onclick="location.href='https://twitter.com/'">
+                <img src="./assets/linkedin-logo.png" alt="Linkadin" class="social-icon" onclick="location.href='https://linkedin.com/'">
+                <img src="./assets/GitHub-Symbol.png" alt="Github" class="social-icon" onclick="location.href='https://github.com/'">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &#169 2023 Surith Lakpriya. All rights reserved.</p>
+    </footer>
